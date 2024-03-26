@@ -1,0 +1,149 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.coachingname{
+display: flex;
+justify-content: center;
+align-items: center;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigationbar ul {
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navigationbar ul li{
+    display: inline;
+    padding: 8px;
+    float: left;
+  
+}
+.navigationbar ul li a{
+    display: block;
+    text-align: center;
+    padding: 14px;
+ color: white;
+ text-decoration: none;
+ font-family: Arial, Helvetica, sans-serif;
+}
+.navigationbar ul li:hover{
+   background-color: green;
+}
+#login,#signup{
+    display: inline;
+    float: inline-end;
+    margin-inline-end: 15px;
+}
+.imageslideshow{
+    display: flex;
+    width: 100%;
+    height: 700px; 
+    justify-content: center;
+    align-items: center;
+
+}
+.images{
+    margin-top: 9px;
+    height: 100%;
+    width: 100%;
+}
+.ourteachers h2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div span:hover{
+   transition: 50ms;
+   border-bottom-style: solid;
+   border-width: 3px;
+   border-color: tomato;
+}
+
+.ourteachersbackground{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    width: 100%;
+    height: 300px;
+    background-color: black;
+    color:black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 50px;}
+   
+.teacher{
+    display:flex ;
+    flex-direction: column;
+    background-color: white;
+    padding: 25px;
+    margin: 30px;
+    border-radius: 43px;
+    text-align: center;
+}
+.ourvision{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+.ourvisioncontent{
+   border-radius: 50px;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    padding: 50px;   
+
+}
+
+ .footer {
+    margin-top: 70px;
+}
+
+.svg {
+    position: relative; /* Change position to relative */
+    width: 100%;
+    margin-bottom: -5px; /* Adjust margin to overlap the border */
+    transform: rotate(180deg);
+}
+
+.contactus {
+    margin-top: 0px; /* Remove negative margin */
+    width: 100%;
+    background-color: black;
+    position: relative; /* Change position to relative */
+    z-index: 0; /* Set z-index to default */
+    overflow: hidden; /* Hide overflowing content */
+}
+
+.contactuscontent {
+    color: white;
+    padding: 50px;
+
+    position: relative; /* Add relative positioning */
+}
+
+/* Adjusted styles for input and button */
+.updates input {
+    padding: 7px;
+    width:45%;
+    margin-right: 10px;
+    border-radius: 33px;
+}
+
+.updates button {
+    padding: 7px 20px;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 33px;
+    cursor: pointer;
+}
+
+#copywrite {
+    margin-top: 40px;
+    text-align: center;
+}
