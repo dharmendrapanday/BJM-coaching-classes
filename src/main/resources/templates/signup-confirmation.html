@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Signup Confirmation</title>
+</head>
+<body>
+<!--Accessing/using the model attribute 'student' (this model to view by use of controller)(MVC) -->
+<!--Note name of th:object="${student}" should be same as the model attribute name 'student'-->
+<div th:object="${student}">
+<!--    here the getter method were called because we are using th:text which only give output cannot take input -->
+    <p>
+        Name:<span th:text="*{firstName}+'  '+*{lastName}"/><br><br>
+        Mob. num:<span  th:text="*{mobileNumber}" /><br><br>
+        date of birth:<span  th:text="*{dob}"/><br><br>
+        grade:<span th:text="*{grade}"/><br><br>
+        Stream:<span th:text="*{stream}"/><br><br>
+        school Name;<span th:text="*{schoolName}"/><br><br>
+        Email: <span th:text="*{email}"/><br><br>
+        password:<span th:text="*{password}"/><br><br>
+
+    </p>
+</div>
+</body>
+</html>

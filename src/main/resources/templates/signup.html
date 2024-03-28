@@ -23,50 +23,55 @@
             <hr>
         </div>
         <div class="signup-form">
-            <form >
-                <label for="fname">Your First Name</label>
-                <input id="fname" type="text" placeholder="Your First Name" required>
+            <!--Accessing/using the model attribute 'student' (this model to view by use of controller)(MVC) -->
+            <!--Note name of th:object="${student}" should be same as the model attribute name 'student'-->
+            <!--th:action gives the endpoint which tells which method is exceuted after clicking submitt button  based on method Mapping-->
+            <form th:action="@{/process-student-form}" th:object="${student}" method="post">
+                <!--    here the setter method were called because we are using th:field in the input tag which only take input cannot show output -->
+
+                <label for="fname"> First Name:</label>
+                <input id="fname" type="text" th:field="*{firstName}" placeholder="First Name" required>
                 <br><br>
-                <label for="lname">Your Last Name</label>
-                <input id="lname" type="text" placeholder="Your Last Name" required><br><br>
-                <label for="mobnum">Your Mobile Number</label>
-                <input id="mobnum" type="tel" placeholder="Your Mob. Number" required><br><br>
-                <label for="dob">Your Date of Birth</label>
-                <input id="dob" type="date" required><br><br>
-                <label for="class">Your Class</label>
-                <select id="class" name="class" required>
-                    <option value="1">1st</option>
-                    <option value="2">2nd</option>
-                    <option value="3">3rd</option>
-                    <option value="4">4th</option>
-                    <option value="5">5th</option>
-                    <option value="6">6th</option>
-                    <option value="7">7th</option>
-                    <option value="8">8th</option>
-                    <option value="9">9th</option>
-                    <option value="10">10th</option>
-                    <option value="11">11th</option>
-                    <option value="12">12th</option>
+                <label for="lname"> Last Name:</label>
+                <input id="lname" type="text" th:field="*{lastName}" placeholder="Last Name" required><br><br>
+                <label for="mobnum"> Mobile Number:</label>
+                <input id="mobnum" type="tel"  th:field="*{mobileNumber}" placeholder="Mob. Number" required><br><br>
+                <label for="dob"> Date of Birth:</label>
+                <input id="dob"  th:field="*{dob}" type="date" required><br><br>
+                <label for="grade"> Grade:</label>
+                <select id="grade"  th:field="*{grade}" name="class" required>
+                    <option value="1st">1st</option>
+                    <option value="2nd">2nd</option>
+                    <option value="3rd">3rd</option>
+                    <option value="4th">4th</option>
+                    <option value="5th">5th</option>
+                    <option value="6th">6th</option>
+                    <option value="7th">7th</option>
+                    <option value="8th">8th</option>
+                    <option value="9th">9th</option>
+                    <option value="10th">10th</option>
+                    <option value="11th">11th</option>
+                    <option value="12th">12th</option>
                 </select><br><br>
-                <label for="stream">Choose Stream</label>
-                <select id="stream" name="stream" required>
+                <label for="stream">Choose Stream:</label>
+                <select id="stream"  th:field="*{stream}"  name="stream" required>
                     <option value="commerce">Commerce</option>
                     <option value="pcm"> PCM</option>
                     <option value="pcb"> PCB</option>
                     <option value="none">None</option>
                 </select><br><br>
-                <label for="school-name">Your School Name</label>
-                <input id="school-name" type="text" placeholder="Your School Name" required>
+                <label for="school-name"> School Name:</label>
+                <input id="school-name" type="text"   th:field="*{schoolName}" placeholder=" School Name" required>
                 <br><br>
-                <label for="email"> Your Email Id</label>
-                <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                <label for="email">  Email Id:</label>
+                <input type="email" id="email" name="email"  th:field="*{email}" placeholder=" Email Address" required>
                 <br><br>
-                <label for="set-password"> Set Password</label>
-                <br><input type="password" id="set-password" placeholder="Your Password" required>
+                <label for="set-password"> Set Password:</label>
+                <input type="password" id="set-password" placeholder=" Password" required>
                 <br><br>
-                <label for="confirm-password"> Confirm Password</label>
-                <br><input type="password" id="confirm-password" placeholder="Your Password" required>
-                <br><br><button type="submit">Sign up</button><br><br>
+                <label for="confirm-password"> Confirm Password:</label>
+                <input type="password" id="confirm-password"  th:field="*{password}" placeholder=" Password" required>
+              <div class="button"> <br><br><button type="submit">Sign up</button><br><br></div>
 
 
             </form>
