@@ -1,13 +1,13 @@
-package com.BJMcoachingclasses;
+package com.bjm.coaching;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BjmCoachingClassesApplication {
+public class BjmCoachingApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BjmCoachingClassesApplication.class, args);
+		SpringApplication.run(BjmCoachingApplication.class, args);
 	}
 
 }

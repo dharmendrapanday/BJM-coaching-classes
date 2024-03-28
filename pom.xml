@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com</groupId>
-	<artifactId>BJM-coaching-classes</artifactId>
+	<artifactId>bjm-coaching</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>BJM-coaching-classes</name>
+	<name>bjm-coaching</name>
 	<description>A coaching management system in spring</description>
 	<properties>
 		<java.version>17</java.version>

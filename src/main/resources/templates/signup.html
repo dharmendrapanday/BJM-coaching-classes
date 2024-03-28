@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" th:href="@{/css/signup.css}">
+
+</head>
+
+<body>
+    <div class="outer-div">
+        <div class="inner-div">
+            <div class="coaching-name">
+                <span>
+                    <img th:src="@{/images/icons/logo.png}" alt="coaching icon" height="100px" width="80px"
+                        style="border-radius: 100%;">
+                </span>
+                <h2>Coaching.Keeda</h2>
+                <hr>
+                <h4>Student Sign Up</h4>
+                <hr>
+            </div>
+            <div class="signup-form">
+                <form >
+                    <label for="fname">Your First Name</label><br>
+                    <input id="fname" type="text" placeholder="Your First Name" required>
+                    <br><br>
+                    <label for="lname">Your Last Name</label><br>
+                    <input id="lname" type="text" placeholder="Your Last Name" required><br><br>
+                    <label for="mobnum">Your Mobile Number</label><br>
+                    <input id="mobnum" type="tel" placeholder="Your Mob. Number" required><br><br>
+                    <label for="dob">Your Date of Birth</label><br>
+                    <input id="dob" type="date" required><br><br>
+                    <label for="class">Your Class</label><br>
+                    <select id="class" name="class" required>
+                        <option value="1">1st</option>
+                        <option value="2">2nd</option>
+                        <option value="3">3rd</option>
+                        <option value="4">4th</option>
+                        <option value="5">5th</option>
+                        <option value="6">6th</option>
+                        <option value="7">7th</option>
+                        <option value="8">8th</option>
+                        <option value="9">9th</option>
+                        <option value="10">10th</option>
+                        <option value="11">11th</option>
+                        <option value="12">12th</option>
+                    </select><br><br>
+                    <label for="stream">Choose Stream</label><br>
+                    <select id="stream" name="stream" required>
+                        <option value="commerce">Commerce</option>
+                        <option value="pcm"> PCM</option>
+                        <option value="pcb"> PCB</option>
+                        <option value="none">None</option>
+                    </select><br><br>
+                    <label for="school-name">Your School Name</label><br>
+                    <input id="school-name" type="text" placeholder="Your School Name" required>
+                    <br><br>
+                    <label for="email"> Your Email Id</label><br>
+                    <input type="email" id="email" name="email" placeholder="Your Email Address" required>
+                    <br><br>
+                    <label for="set-password"> Set Password</label>
+                    <br><input type="password" id="set-password" placeholder="Your Password" required>
+                    <br><br>
+                    <label for="confirm-password"> Confirm Password</label>
+                    <br><input type="password" id="confirm-password" placeholder="Your Password" required>
+                    <br><br><button type="submit">Sign up</button><br><br>
+
+
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
